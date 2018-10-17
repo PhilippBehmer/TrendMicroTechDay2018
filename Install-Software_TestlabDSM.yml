@@ -2,6 +2,7 @@
 
 - name: Install software on DB Servers
   hosts: tag_Name_AnsibleDemo_Database
+  strategy: free
 
   pre_tasks:
     - name: Update repositories cache if the last one is more than 3600 seconds ago
