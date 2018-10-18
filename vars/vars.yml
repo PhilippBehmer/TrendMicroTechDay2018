@@ -8,11 +8,11 @@ ansible_ssh_pub: ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQC3tU8XpEuQ+SX5DjdXizRColE
 
 # AWS vars
 
-aws_instance_ami: ami-7c412f13
-aws_vpc_subnet_id: subnet-82bc9be9
+aws_instance_ami: ami-7c412f13             # Ubuntu 16.04 LTS
+#aws_instance_ami: ami-0bdf93799014acdc4   # Ubuntu 18.04 LTS
+aws_vpc_subnet_id: subnet-82bc9be9         # DevOpsPlayground-subnet-01
 aws_region: eu-central-1
 aws_instance_type: t2.micro
-aws_security_groups: ['sg-73663b1e', 'sg-1165387c']
+aws_security_groups: ['sg-73663b1e', 'sg-1165387c'] # Allow from my IP, Default
 aws_ssh_key: TM-AWS-AccessKey
-
-aws_instance_tags: '{"Name":"TestServer"}'
+#aws_instance_tags: '{"Name":"TestServer"}'
